@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:paddingTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/shutdown"
+            android:onClick="shutdown"
+            android:scaleY="0.5"
+            android:scaleX="0.5"
+            android:background="@drawable/shutdown"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/sleep"
+            android:layout_height="match_parent"
+            android:text=""
+            android:scaleY="0.5"
+            android:scaleX="0.5"
+            android:onClick="sleep"
+            android:id="@+id/sleep"
+            android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:onClick="restart"
+            android:id="@+id/restart"
+            android:background="@drawable/restart"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:onClick="logoff"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:id="@+id/logoff"
+            android:background="@drawable/logoff"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

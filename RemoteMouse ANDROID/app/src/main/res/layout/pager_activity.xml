@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="3"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+     >
+
+
+
+<android.support.v4.view.ViewPager
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewPager"
+    android:layout_weight="2.7"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    />
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_weight="0.3"
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="7dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleX="0.5"
+            android:scaleY="2"
+            android:id="@+id/button"
+            android:background="@drawable/startbutton"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@drawable/bg"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:id="@+id/mouse"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+    <RelativeLayout
+    android:orientation="horizontal"
+        android:layout_width="wrap_content"
+    android:id="@+id/motionevent"
+    android:layout_weight="5.9"
+    android:layout_height="match_parent">
+    </RelativeLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:id="@+id/updownlinearlayout"
+            android:layout_width="10dp"
+            android:layout_height="match_parent">
+    <Button
+        android:layout_weight="1"
+        android:layout_width="20dp"
+        android:onClick="up"
+        android:id="@+id/up"
+        android:layout_height="match_parent" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="20dp"
+                android:onClick="down"
+                android:id="@+id/down"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_weight="0.8"
+    android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttons"
+
+            android:layout_width="fill_parent"
+            android:weightSum="5"
+            android:layout_height="50dp"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:lines="1"
+                android:layout_weight="2"
+                android:layout_height="50dp"
+                android:text=""
+
+                android:id="@+id/leftClick"
+                android:onClick="leftClick"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:lines="1"
+                android:scaleX="0.8"
+                android:scaleY="1"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text=""
+                android:background="@drawable/out"
+                android:id="@+id/centerClick"
+                android:onClick="centerClick"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:lines="1"
+
+                android:layout_height="50dp"
+                android:text=""
+                android:onClick="rightClick"
+                android:id="@+id/rightClick" />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_weight="5"
+                android:layout_height="fill_parent"
+                android:id="@+id/hsv"
+                android:background="@null"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:clickable="true">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal"
+                    android:background="@null"
+                    android:weightSum="8"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/hsv_linearlayout">
+
+
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.6"
+                        android:scaleY="0.9"
+                        android:layout_width="80dp"
+                        android:background="@drawable/keyboard"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="1"
+                        android:layout_width="80dp"
+                        android:background="@drawable/mycomputer"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="0.8"
+                        android:layout_width="80dp"
+                        android:background="@drawable/windows"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="0.8"
+                        android:layout_width="80dp"
+                        android:background="@drawable/webb"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="0.8"
+                        android:layout_width="80dp"
+                        android:background="@drawable/controlpanel"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="0.8"
+                        android:layout_width="80dp"
+                        android:background="@drawable/shutdown"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="0.9"
+                        android:layout_width="80dp"
+                        android:background="@drawable/powerpoint"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                    <Button
+                        android:layout_weight="1"
+                        android:scaleX="0.4"
+                        android:scaleY="0.9"
+                        android:layout_width="80dp"
+                        android:background="@drawable/arrows"
+                        android:layout_height="fill_parent">
+
+                    </Button>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
